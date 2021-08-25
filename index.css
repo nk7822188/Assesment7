@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+.heading {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: 3px underline;
+    background: linear-gradient(to right, red, green, yellow);
+}
+nav ul {
+    width: 50%;
+    margin: 1rem auto;
+    border: 2px solid red;
+    border-radius: 1rem;
+    text-align: center;
+    background: skyblue;
+    list-style-position: inside;
+}
+nav li {
+    margin: auto;
+    width: 50%;
+}
+nav a {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
+/* Section-1 Styling */
+.secOne {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    row-gap: 0.5rem;
+
+    border: 2px solid green;
+    border-radius: 1rem;
+    background-color: aquamarine;
+    padding: 0.5rem 0;
+}
+.secOne__para {
+    flex: 0 1 30%;
+    border: inherit;
+    border-radius: inherit;
+    background-color: aqua;
+
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Section-2 Styling */
+.secTwo {
+    margin: 1rem auto;
+}
+.secTwo__heading {
+    text-align: center;
+    padding: 0 0 1rem;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    text-decoration: 2px red underline;
+    background: radial-gradient(circle, yellow, orange, red);
+}
+.secTwo__content {
+    background: radial-gradient(blue, green);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 2rem;
+    row-gap: 1rem;
+}
+.secTwo__card {
+    max-width: 50%;
+    border: 2px solid red;
+    border-radius: 1rem;
+    background: yellow;
+    line-height: 3;
+    padding: 0.6rem;
+}
+.secTwo__para {
+    color: firebrick;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: 2px underline;
+}
+
+/* Section-3 Styling */
+.secThree {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "head head head head"
+        "one two three side"
+        "main main main side"
+        "foot foot foot foot";
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.secThree__head {
+    grid-area: head;
+    background: hsl(348, 83%, 50%);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0 1rem;
+}
+.secThree__one {
+    grid-area: one;
+    background: hsl(120, 70%, 55%);
+    text-align: center;
+}
+.secThree__two {
+    grid-area: two;
+    background: dodgerblue;
+}
+.secThree__three {
+    grid-area: three;
+    background: rebeccapurple;
+}
+.secThree__main {
+    grid-area: main;
+    background: orange;
+}
+.secThree__side {
+    grid-area: side;
+    background: hsl(200, 40%, 30%);
+    font-weight: normal;
+}
+.secThree__side li:nth-child(odd) {
+    list-style-position: inside;
+    border-bottom: 3px double white;
+}
+.secThree__side li:nth-child(even) {
+    list-style-position: inside;
+    border-bottom: 2px solid white;
+}
+.secThree__side a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+
+   
+}
+.secThree__foot {
+    grid-area: foot;
+    background: skyblue;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
